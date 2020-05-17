@@ -1,0 +1,40 @@
+
+.timeline-bg-content {
+    background-image: url('../../../assets/images/banner/adda-timeline.jpg');
+}
+
+.other-links{
+    padding-top: 12px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.submit-btn:disabled{
+  opacity: 0.4;
+}
+
+.login-btn:disabled{
+  opacity: 0.4;
+}
+
+
+
+.other-links a{
+    color: #dc4734;
+}
+
+.other-links p{
+    text-align: center;
+}
+
+.loader > svg > circle{
+    stroke: #fff !important;
+}
+
+.spinner-grow-sm:hover{
+  background: #0b2e13;
+}
+
+

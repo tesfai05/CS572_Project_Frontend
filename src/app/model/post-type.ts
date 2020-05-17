@@ -1,0 +1,7 @@
+export enum PostType {
+  SEARCH_POSTS,
+  USER_POSTS,
+  HOMEPAGE_POSTS,
+  ACCOUNT_REVIEW,
+  POST_REVIEW
+}

@@ -1,0 +1,46 @@
+<app-header [headerType] = "'user'" ></app-header>
+
+
+
+
+<!-- News Area -->
+<main>
+
+    <div class="main-wrapper pt-80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 order-2 order-lg-1">
+                    <app-profile-widget ></app-profile-widget>
+                </div>
+
+
+                <div class="col-lg-6 order-1 order-lg-2" style="overflow: auto;">
+
+                    <!-- Posts -->
+                    <app-posts [postState]="postState" ></app-posts>
+                  <!-- End of posts -->
+
+
+
+                </div>
+
+                <!-- Widget Area -->
+                <div class="col-lg-3 order-3">
+                    <aside class="widget-area" >
+
+                         <app-ad-widget></app-ad-widget>
+
+                    </aside>
+                </div>
+
+
+             </div>
+
+        </div>
+
+    </div>
+</main>
+
+
+

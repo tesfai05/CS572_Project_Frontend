@@ -1,0 +1,39 @@
+<aside class="widget-area" >
+    <!-- widget single item start -->
+    <div class="card card-profile widget-item p-0" [@loadingPlaceholder] = "showPlaceholder ? 'close':'show'">
+        <div class="profile-banner">
+            <figure class="profile-banner-small" >
+                <a [routerLink]="'/profile/'+currentuser._id+'/timeline'">
+                  <img src="assets/images/banner/banner-small_ori.jpg" alt="">
+                </a>
+                <a [routerLink]="'/profile/'+currentuser._id+'/timeline'" class="profile-thumb-2">
+                    <app-profile-photo id="home-profilePhoto" [imageName]="profilePicture" [style]=""></app-profile-photo>
+                </a>
+            </figure>
+            <div class="profile-desc text-center">
+                <h6 class="author"><a [routerLink]="'/profile/'+currentuser._id+'/timeline'">{{currentuser.username}}</a></h6>
+                <p>{{currentuser.email}}</p>
+                <div class="profile-details">
+                  <p class="following-text">{{currentuser.following.length+ ' Follower(s)  '}}</p>
+                  <p class="follower-text">{{currentuser.followers.length+ ' Followings.'}}</p>
+                </div>
+
+                <button class="submit-btn btn-sm" (click)="uploadPhoto()">Change Profile Picture</button>
+            </div>
+        </div>
+    </div>
+    <div class="widget-placeholder" [@loadingPlaceholder] = "showPlaceholder ? 'show':'close'">
+        <div class="p-4">
+            <span class="category text link"></span>
+        </div>
+        <div class="image">
+          <div class="embed-responsive embed-responsive-16by9"></div>
+        </div>
+        <div class="excerpt p-4">
+            <div class="text line"></div>
+        </div>
+    </div>
+    <!-- widget single item start -->
+
+
+</aside>
